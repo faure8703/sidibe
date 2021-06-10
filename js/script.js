@@ -312,7 +312,7 @@ function anythingSlider(){
 
 function circleProgressBar(thisProgressBar){
     $(thisProgressBar).circleProgress({
-        fill: { color: "#1696e7" },
+        fill: { color: "#5e0335" },
         thickness: "9",
         lineCap: "round",
         size: "150",
@@ -550,7 +550,7 @@ function googleMapStyle(lat, long, infoWin, currentMap)
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#1696e7"
+                "color": "#5e0335"
             },
             {
                 "saturation": "0"
