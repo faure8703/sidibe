@@ -283,7 +283,7 @@ legend{
     position: absolute;
     height: 100%;
     width: 80px;
-    right: 0px;
+    right: 30px;
     top:0px;
     background-color: #f2f2f2;
     margin: 0px;
@@ -509,7 +509,7 @@ legend{
     position: absolute;
     height: 100%;
     width: 80px;
-    right: 0px;
+    right: 30px;
     top:0px;
     background-color: #303b41;
     margin: 0px;
@@ -732,7 +732,7 @@ legend{
     position: absolute;
     height: 100%;
     width: 80px;
-    right: 0px;
+    right: 30px;
     top:0px;
     background-color: #5e0335;
     margin: 0px;
