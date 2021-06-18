@@ -100,10 +100,10 @@
 										&lt;IfModule mod_rewrite.c&gt;<br>
 										RewriteEngine On<br>
 										RewriteBase /<br>
-										RewriteRule ^index.php$ - [L]<br>
+										RewriteRule ^index$ - [L]<br>
 										RewriteCond %{REQUEST_FILENAME} !-f<br>
 										RewriteCond %{REQUEST_FILENAME} !-d<br>
-										RewriteRule . /index.php [L]<br>
+										RewriteRule . /index [L]<br>
 										&lt;/IfModule&gt;<br>
 										# End WordPress
 									</p>

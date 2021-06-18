@@ -605,7 +605,7 @@ function callFormSubmit(){
 	{
 		clearForm : 'false',
 		type : 'POST',
-		url : 'sendemail.php',            // PHP Script for Form Submission
+		url : 'sendemail',            // PHP Script for Form Submission
 		cache : 'false',
 		resetForm : 'false',
 		async : 'true',
