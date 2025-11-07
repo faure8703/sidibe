@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
  
 
-Sitemap: https://www.maitre-sidibe.com/sitemap.xml
+Sitemap: https://www.aidespirituelle.com/sitemap.xml
