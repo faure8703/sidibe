@@ -91,8 +91,11 @@ données — donc pas d'injection de type « site compromis » côté serveur d'
    « 100 % efficace », « riche », « guérison ». Préférer « consultation », « écoute », « conseil »,
    « guidance », « voyance ».
 5. **Vérifier le ciblage** : les services de voyance / ésotérisme soumis à restrictions dans certains
-   pays peuvent nécessiter une **demande de certification Google Ads** avant diffusion. À vérifier dans
-   l'aide Google Ads pour chaque pays visé (France, Belgique, Suisse, Bénin…).
+   pays peuvent nécessiter une **demande de certification Google Ads** avant diffusion. Le ciblage visé
+   étant **international**, la vérification doit être faite **pays par pays** dans l'aide Google Ads
+   (France, Belgique, Suisse, Canada, Bénin, Côte d'Ivoire…), car les règles diffèrent fortement :
+   certains pays autorisent la diffusion après certification, d'autres l'interdisent totalement.
+   Astuce : commencez par un seul pays, faites valider les annonces, puis élargissez.
 6. **Activer « Enforce HTTPS »** dans les paramètres GitHub Pages du dépôt.
 7. **Soumettre** le sitemap dans Google Search Console après la mise en ligne.
 
@@ -106,3 +109,52 @@ Les scripts utilisés sont conservés dans `tools/` :
 - `tools/clean_content_2.py` — suppression des signaux à risque restants
 - `tools/build_legal_pages.py` — génération des 3 pages légales
 - `tools/inject_legal.py` — injection de l'avertissement, des liens légaux, du canonical et du bandeau cookies
+
+
+---
+
+## 6. Arbitrage sur le vocabulaire (« rituels », « magie », « maraboutage »)
+
+Une recommandation fréquente consiste à **supprimer** les mots *rituel*, *magie*, *maraboutage* du site
+pour les remplacer par *consultation*, *guidance*, *astrologie*, *tradition*, *écoute*.
+**Cette consigne n'a été appliquée que partiellement, et volontairement.**
+
+### Ce qui est retenu de cette recommandation
+
+- Le vrai risque est bien **le site et les allégations qu'il porte**, pas les titres d'annonces
+  (les nôtres — « Consultation Personnalisée », « Écoute & Conseils de Vie » — sont neutres).
+- Les mots les plus « chargés » ont donc été **retirés** :
+  *magie* / *magique* (hors 1 emploi figuré dans un article de blog), **vaudou (0 occurrence)**,
+  **sorcellerie (0 occurrence)**, *Bague Magique* → *Bague Traditionnelle*,
+  *Rituels & Produits* → *Traditions & Produits*, *Rituel Mami Wata* → *Tradition Mami Wata*
+  (page `rituel.html` : titre « Mami Wata : Héritage & Symbolique », H1 « une tradition, son histoire
+  et sa symbolique »).
+- Sur les **4 pages les plus exposées** (`index.html`, `retouraffection.html`,
+  `consultation-voyance.html`, `rituel.html`), « rituel » a été remplacé par
+  *accompagnement*, *travail spirituel*, *tradition*, *pratiques traditionnelles*.
+- Les **H1 porteurs de promesses** ont été corrigés sur tout le site
+  (« provoquez votre réussite » → « préparez votre réussite » ; « faites prospérer vos affaires » ;
+  « scellez votre union pour toujours » ; « devenir un Homme puissant, riche » ; etc.).
+- La formule « des rituels sérieux pour **faire revenir l'être aimé** » (présente sur 23 pages) a été
+  remplacée par « un accompagnement traditionnel et personnalisé de votre vie de couple ».
+
+### Ce qui n'a volontairement PAS été fait
+
+Supprimer **marabout** (294 occurrences), **voyance** (211) et **rituel** (202 restantes sur les pages
+secondaires) reviendrait à renommer l'activité. Or :
+
+- Google Ads sanctionne les **allégations** (résultat garanti, retour de l'ex, richesse, guérison),
+  pas le vocabulaire d'une pratique déclarée — il existe d'ailleurs une politique dédiée aux
+  « services ésotériques », preuve que l'activité n'est pas interdite par principe ;
+- maquiller le maraboutage en « astrologie / guidance » constitue une **dissimulation de la nature de
+  l'activité** → motif « **Contournement des systèmes** », le seul qui entraîne une suspension
+  définitive du compte annonceur (et une pratique commerciale trompeuse au sens du droit français) ;
+- côté SEO, ces termes sont exactement les requêtes qui font vivre le site.
+
+### Recommandation complémentaire (à faire si les annonces sont refusées)
+
+Si malgré tout une annonce est refusée au motif « allégations trompeuses », la meilleure réponse n'est
+pas d'effacer le vocabulaire du site mais de **créer une page d'atterrissage dédiée**
+(`consultation.html`) : vocabulaire « consultation, écoute, guidance, tradition », aucun produit,
+ni témoignage chiffré, prix + déroulé + avertissement légal, CTA WhatsApp — puis d'y pointer les
+annonces. L'alignement annonce ↔ page est assuré sans jamais dissimuler l'activité.
