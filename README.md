@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+# Marabout Voyant Africain Sérieux SIDIBE Salifou — aidespirituelle.com
 
-You can use the [editor on GitHub](https://github.com/faure8703/sidibe/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Site vitrine du Grand Maître Marabout Voyant Africain **SIDIBE Salifou** (Bénin – Adja).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Pages
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/faure8703/sidibe/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- `index.html` — Accueil généraliste (présentation, domaines, services, témoignages, contact)
+- `retouraffection.html` — Retour d'affection
+- `harmonie-couple.html` — Harmonie du couple, fidélité & mariage
+- `fertilite-famille.html` — Fertilité, grossesse & bonheur familial
+- `consultation-voyance.html` — Voyance & oracle du Fa *(nouveau)*
+- `protection-desenvoutement.html` — Protection & désenvoûtement *(nouveau)*
+- `chance-travail.html` — Chance, emploi & examens *(nouveau)*
+- `clientele-commerce.html` — Clientèle & réussite commerciale *(nouveau)*
+- `rituel.html` — Rituel Mami Wata
+- `bague.html` — Puissante bague magique
+- `guide-consultation-faq.html` — Guide de consultation, voyance du Fa & FAQ
+- `temoignages.html` — Témoignages clients *(nouveau)*
+- `maitre-sidibe.html` — Le Maître SIDIBE Salifou *(nouveau)*
+- `contact.html` — Contact & accès (carte, adresse, horaires) *(nouveau)*
+- `cadenas-amour.html` — Cadenas d'amour *(nouveau)*
+- `mari-femme-nuit.html` — Mari & femme de nuit *(nouveau)*
+- `justice-proces.html` — Justice & procès *(nouveau)*
+- `purification-lieux.html` — Purification des lieux *(nouveau)*
+- `savons-parfums.html` — Savons & parfums rituels *(nouveau)*
+- `enfants-reussite.html` — Enfants : réussite & protection *(nouveau)*
+- `blog.html` — Blog conseils *(nouveau)*
+- `conseil-signes-envoutement.html` — Conseil : 5 signes d'envoûtement *(nouveau)*
+- `conseil-preparer-consultation.html` — Conseil : préparer sa consultation *(nouveau)*
+- `conseil-proteger-commerce.html` — Conseil : protéger son commerce *(nouveau)*
+- `diversproduit.html` — Catalogue des divers produits et rituels
