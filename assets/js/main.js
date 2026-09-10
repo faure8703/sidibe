@@ -5,7 +5,11 @@
     Responsive menu Active
     ------------------------------ */
 	$(".mainmenu ul#primary-menu").slicknav({
-		allowParentLinks: true,
+		allowParentLinks: false,
+		nestedParentLinks: false,
+		closeOnClick: false,
+		closedSymbol: '&#9656;',
+		openedSymbol: '&#9662;',
 		prependTo: '.responsive-menu',
 	});
 	
@@ -194,5 +198,78 @@
     START - WOW JS animation
     ------------------------------ */
 	new WOW().init();
+
+	/*----------------------------
+    START - Contact Popup Modal (10s)
+    ------------------------------ */
+	$(function() {
+		// Inject the popup HTML into the page if not already present
+		if ($('#contact-popup-overlay').length === 0) {
+			var popupHtml = [
+				'<div id="contact-popup-overlay" class="contact-popup-overlay">',
+				'  <div class="contact-popup-modal" role="dialog" aria-modal="true" aria-labelledby="contact-popup-title">',
+				'    <button type="button" class="contact-popup-close" id="contact-popup-close" aria-label="Fermer">&times;</button>',
+				'    <div class="contact-popup-header">',
+				'      <div class="contact-popup-badge"><i class="fa fa-circle" style="color:#25d366;font-size:9px;vertical-align:middle;margin-right:4px;"></i> En ligne 24h/24</div>',
+				'      <h3 id="contact-popup-title">Besoin d\'une Aide Immédiate ?</h3>',
+				'      <p class="contact-popup-subtitle">Grand Maître Marabout Voyant SIDIBE Salifou</p>',
+				'    </div>',
+				'    <div class="contact-popup-body">',
+				'      <p class="contact-popup-text">',
+				'        Amour, retour d\'affection rapide, protection, chance, voyance du Fa ou déblocage...<br>',
+				'        <strong>Échangez directement avec le Maître en toute discrétion.</strong>',
+				'      </p>',
+				'      <div class="contact-popup-actions">',
+				'        <a href="https://wa.me/2290196873373?text=Bonjour%20Grand%20Ma%C3%AEtre%20SIDIBE%2C%20j%27ai%20besoin%20d%27une%20aide%20imm%C3%A9diate%20et%20d%27une%20consultation." class="contact-popup-btn btn-whatsapp" target="_blank" rel="noopener">',
+				'          <i class="fa fa-whatsapp"></i> Écrire sur WhatsApp',
+				'        </a>',
+				'        <a href="tel:+2290196873373" class="contact-popup-btn btn-call">',
+				'          <i class="fa fa-phone"></i> Appeler le +229 01 96 87 33 73',
+				'        </a>',
+				'      </div>',
+				'      <div class="contact-popup-footer-note">',
+				'        <i class="fa fa-lock"></i> Consultation 100% confidentielle &amp; réponse rapide',
+				'      </div>',
+				'    </div>',
+				'  </div>',
+				'</div>'
+			].join('');
+			$('body').append(popupHtml);
+		}
+
+		function openContactPopup() {
+			$('#contact-popup-overlay').addClass('active');
+		}
+
+		function closeContactPopup() {
+			$('#contact-popup-overlay').removeClass('active');
+			sessionStorage.setItem('contact_popup_closed', '1');
+		}
+
+		// Show popup after 10 seconds (10000ms)
+		setTimeout(function() {
+			if (!sessionStorage.getItem('contact_popup_closed')) {
+				openContactPopup();
+			}
+		}, 10000);
+
+		// Event handlers for closing the popup
+		$(document).on('click', '#contact-popup-close', function(e) {
+			e.preventDefault();
+			closeContactPopup();
+		});
+
+		$(document).on('click', '#contact-popup-overlay', function(e) {
+			if ($(e.target).is('#contact-popup-overlay')) {
+				closeContactPopup();
+			}
+		});
+
+		$(document).on('keydown', function(e) {
+			if (e.key === 'Escape' || e.keyCode === 27) {
+				closeContactPopup();
+			}
+		});
+	});
 
 }(jQuery));

@@ -1,5 +1,4 @@
 User-agent: *
-Disallow:
- 
+Allow: /
 
-Sitemap: https://www.aidespirituelle.com/sitemap.xml
+Sitemap: sitemap.xml
