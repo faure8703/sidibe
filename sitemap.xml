@@ -6,137 +6,128 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- sitemap du Marabout Voyant Africain Sérieux SIDIBE Salifou -->
 
-
 <url>
-  <loc>https://aidespirituelle.com/</loc>
+  <loc>index.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/index.html</loc>
+  <loc>retouraffection.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/bague.html</loc>
+  <loc>harmonie-couple.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/rituel.html</loc>
+  <loc>fertilite-famille.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/retouraffection.html</loc>
+  <loc>cadenas-amour.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/harmonie-couple.html</loc>
+  <loc>mari-femme-nuit.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/fertilite-famille.html</loc>
+  <loc>enfants-reussite.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/guide-consultation-faq.html</loc>
+  <loc>rituel.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/diversproduit.html</loc>
-  <lastmod>2026-09-10T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
-<url>
-  <loc>https://aidespirituelle.com/consultation-voyance.html</loc>
+  <loc>bague.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/protection-desenvoutement.html</loc>
+  <loc>savons-parfums.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/chance-travail.html</loc>
+  <loc>diversproduit.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/clientele-commerce.html</loc>
+  <loc>consultation-voyance.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/temoignages.html</loc>
+  <loc>protection-desenvoutement.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/maitre-sidibe.html</loc>
+  <loc>purification-lieux.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/contact.html</loc>
-  <lastmod>2026-09-10T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://aidespirituelle.com/cadenas-amour.html</loc>
+  <loc>justice-proces.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/mari-femme-nuit.html</loc>
+  <loc>chance-travail.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/justice-proces.html</loc>
+  <loc>clientele-commerce.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/purification-lieux.html</loc>
+  <loc>guide-consultation-faq.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/savons-parfums.html</loc>
+  <loc>blog.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/enfants-reussite.html</loc>
+  <loc>conseil-signes-envoutement.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/blog.html</loc>
+  <loc>conseil-preparer-consultation.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/conseil-signes-envoutement.html</loc>
+  <loc>conseil-proteger-commerce.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/conseil-preparer-consultation.html</loc>
+  <loc>temoignages.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://aidespirituelle.com/conseil-proteger-commerce.html</loc>
+  <loc>maitre-sidibe.html</loc>
+  <lastmod>2026-09-10T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>contact.html</loc>
   <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>

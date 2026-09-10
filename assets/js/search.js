@@ -12,7 +12,7 @@
         { t: "Bague Magique", u: "bague.html", k: "bague anneau fortune chance protection" },
         { t: "Rituel Mami Wata", u: "rituel.html", k: "rituel mami wata maman eau richesse puissance pacte reine" },
         { t: "Divers Produits", u: "diversproduit.html", k: "produits catalogue savon talisman cadenas parfum bic miroir liste" },
-        { t: "Guide & FAQ", u: "guide-consultation-faq.html", k: "guide faq aide consultation deroulement delai arnaque question distance" },
+        { t: "Guide & FAQ", u: "guide-consultation-faq.html", k: "guide faq aide consultation deroulement delai question distance" },
         { t: "Témoignages", u: "temoignages.html", k: "temoignage avis client satisfaction opinion" },
         { t: "Le Maître SIDIBE Salifou", u: "maitre-sidibe.html", k: "maitre sidibe salifou biographie parcours vodou benin adja" },
         { t: "Cadenas d'Amour", u: "cadenas-amour.html", k: "cadenas amour union fidelite foyer sceller" },
