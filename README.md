@@ -25,7 +25,7 @@ Site web officiel du Grand Maître Marabout Voyant SIDIBE Salifou du Bénin.
 - **Disponibilité :** 24h/24 et 7j/7
 
 ## Pages légales (obligatoires Google Ads)
-- `mentions-legales.html` — éditeur, hébergeur (GitHub Pages), nature des prestations
+- `mentions-legales.html` — éditeur, hébergeur (OVH), nature des prestations
 - `politique-confidentialite.html` — données collectées, cookies, droits des personnes
 - `cgu.html` — conditions générales d'utilisation et de vente
 
