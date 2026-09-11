@@ -263,3 +263,46 @@ aucune redirection, aucun contenu différent servi à Googlebot.
   acceptable en l'état, à surveiller au prochain refus.
 - E-mail et n° d'immatriculation toujours à compléter dans les mentions légales (bloquant pour la
   transparence de l'annonceur, et indépendant de cet incident).
+
+---
+
+## 4. Deuxième passage — « Allégations douteuses » (nettoyage des pages liées depuis l'accueil)
+
+AdsBot-Google suit les liens internes depuis la page d'accueil : les pages de destination ont donc été
+alignées sur les nouveaux libellés, et les URL elles-mêmes nettoyées.
+
+### Accueil (`index.html`)
+
+| Section | Avant | Après |
+|---|---|---|
+| Hero | « grand maître médium **marabout** africain voyant », « **fertilité** et bien-être » | « **praticien traditionnel et consultant spirituel** », « **projets de famille** et bien-être » |
+| Services « Harmonie du Couple » | « **Stop aux disputes, à l'infidélité et aux rivaux** … protégez votre union **contre le divorce** » | « Conseil relationnel et médiation : apaiser les tensions, renouer le dialogue et retrouver la confiance… » |
+| Nouveaux articles | « **Cadenas d'Amour** — Scellez votre union : fidélité… foyer protégé des rivaux » | « **Lien Amoureux** — Consolidez votre lien amoureux : confiance retrouvée, complicité et tendresse au quotidien. » |
+| Nouveaux articles | « Mari & Femme de Nuit — … **délivrance** et nuits paisibles retrouvées » | « … des repères pour apaiser l'esprit et retrouver des nuits plus sereines. » |
+| Conseils du Maître | « 5 signes d'**envoûtement** » | « 5 signes de **baisse d'énergie** » (description inchangée) |
+
+### Pages renommées (URL + contenu)
+
+| Ancienne page | Nouvelle page | Contenu |
+|---|---|---|
+| `cadenas-amour.html` | **`lien-amoureux.html`** | H1/title « Consolider le lien amoureux et l'harmonie du couple » ; reconstruction de la confiance, dialogue, sérénité du foyer ; **mention explicite : aucune contrainte sur la volonté d'autrui, aucun résultat garanti** |
+| `conseil-signes-envoutement.html` | **`conseil-baisse-energie.html`** | H1/title « 5 signes de baisse d'énergie et de blocage émotionnel » ; mêmes symptômes (fatigue, sommeil, impasse) présentés comme des blocages personnels ; **réflexe médical rappelé en premier** |
+| `protection-desenvoutement.html` | **`protection-harmonisation.html`** | Suppression de « envoûtement / désenvoûtement / ennemis qui veulent du mal » ; vocabulaire : purification, harmonisation, apaisement, sérénité |
+
+Les trois anciennes URLs restent en place sous forme de **pages de redirection** (`meta refresh` + `canonical`
++ `noindex`) : pas de lien cassé, pas d'erreur 404, et aucune page active ne contient les termes à risque.
+
+### Autres corrections de cohérence
+
+- `blog.html` : titre et chapô de l'article (« 5 signes qui montrent que vous êtes envoûté ») remplacés ; meta descriptions corrigées.
+- `harmonie-couple.html` : suppression de la mention « cadenas d'amour / parfum pour être aimé / sceller durablement votre union ».
+- `consultation-voyance.html`, `maitre-sidibe.html`, `diversproduit.html` : suppression des dernières occurrences de « envoûtement / désenvoûtement ».
+- `assets/js/search.js` : index de recherche mis à jour (titres, URLs, mots-clés).
+- `sitemap.xml` : nouvelles URLs, redirections exclues.
+- Image `assets/img/cadenas-amour.jpg` renommée `assets/img/lien-amoureux.jpg`.
+
+### Contrôle final
+
+Sur l'ensemble du site, il ne reste **aucune occurrence** des termes `marabout`, `cadenas`, `envoûtement`,
+`désenvoûtement`, `délivrance`, `sorcellerie` dans le contenu visible, les balises meta, les `alt` d'images
+ou les URL des pages actives (vérifié par recherche exhaustive sur les 28 pages + JS + sitemap).
