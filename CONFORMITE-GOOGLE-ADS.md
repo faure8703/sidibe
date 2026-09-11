@@ -93,9 +93,13 @@ données — donc pas d'injection de type « site compromis » côté serveur d'
 5. **Vérifier le ciblage** : les services de voyance / ésotérisme soumis à restrictions dans certains
    pays peuvent nécessiter une **demande de certification Google Ads** avant diffusion. Le ciblage visé
    étant **international**, la vérification doit être faite **pays par pays** dans l'aide Google Ads
-   (France, Belgique, Suisse, Canada, Bénin, Côte d'Ivoire…), car les règles diffèrent fortement :
-   certains pays autorisent la diffusion après certification, d'autres l'interdisent totalement.
-   Astuce : commencez par un seul pays, faites valider les annonces, puis élargissez.
+   (France, Belgique, Suisse, Canada, Bénin, Côte d'Ivoire…), car les règles diffèrent fortement.
+   ⚠️ **Corrigé le 11/09 : il n'existe aucune certification Google Ads pour la voyance / l'ésotérisme.**
+   Les secteurs ouvrant droit à demande de certification sont le jeu, les produits financiers
+   spéculatifs, les services d'endettement, la vente de billets, les documents et services
+   gouvernementaux et les distributeurs de logiciels gratuits
+   ([liste officielle](https://support.google.com/adspolicy/answer/16114090?hl=en)).
+   Il n'y a donc **pas de voie administrative** à emprunter : la conformité du contenu est le seul levier.
 6. **Activer « Enforce HTTPS »** dans les paramètres GitHub Pages du dépôt.
 7. **Soumettre** le sitemap dans Google Search Console après la mise en ligne.
 
@@ -144,8 +148,14 @@ Supprimer **marabout** (294 occurrences), **voyance** (211) et **rituel** (202 r
 secondaires) reviendrait à renommer l'activité. Or :
 
 - Google Ads sanctionne les **allégations** (résultat garanti, retour de l'ex, richesse, guérison),
-  pas le vocabulaire d'une pratique déclarée — il existe d'ailleurs une politique dédiée aux
-  « services ésotériques », preuve que l'activité n'est pas interdite par principe ;
+  pas le vocabulaire d'une pratique déclarée.
+  ⚠️ **Corrigé le 11/09 :** la « politique dédiée aux services ésotériques » citée ici **n'existe pas**.
+  Le Règlement Google Ads compte 30 rubriques de contenu restreint (alcools, contrefaçon, crypto,
+  rencontres, santé et médicaments, jeux, contenu sexuel…) et **aucune** rubrique ésotérisme/voyance
+  ([Règlement Google Ads](https://support.google.com/adspolicy/answer/6008942?hl=fr)).
+  Cela ne veut pas dire « activité libre » mais « **sans cadre dédié** » : l'activité est jugée
+  entièrement par les règles générales de *Déclarations trompeuses ou déceptives*, qui s'appliquent
+  à **l'annonce et à la destination**, donc au site.
 - maquiller le maraboutage en « astrologie / guidance » constitue une **dissimulation de la nature de
   l'activité** → motif « **Contournement des systèmes** », le seul qui entraîne une suspension
   définitive du compte annonceur (et une pratique commerciale trompeuse au sens du droit français) ;
@@ -158,3 +168,98 @@ pas d'effacer le vocabulaire du site mais de **créer une page d'atterrissage d�
 (`consultation.html`) : vocabulaire « consultation, écoute, guidance, tradition », aucun produit,
 ni témoignage chiffré, prix + déroulé + avertissement légal, CTA WhatsApp — puis d'y pointer les
 annonces. L'alignement annonce ↔ page est assuré sans jamais dissimuler l'activité.
+
+---
+
+## 7. Incident du 11 septembre — « Éligible (diffusion limitée) / Allégations douteuses »
+
+### Ce que Google a affiché
+
+> « Supprimez du texte **et de la destination** de votre annonce toute déclaration trompeuse et toute
+> fausse allégation concernant votre produit. »
+
+L'annonce étant sobre (« consultation », « écoute »), le déclencheur était **la page d'accueil elle-même**.
+Rappel de la règle appliquée — [Déclarations trompeuses : Allégations douteuses](https://support.google.com/adspolicy/answer/15936857?hl=fr) :
+« faire des allégations inexactes ou des allégations **présentant comme probables certains résultats
+improbables (même si les résultats annoncés sont possibles)** », plus le volet
+« allégations liées aux méthodes pour s'enrichir » et l'exigence de clauses de non-responsabilité
+**lorsque les témoignages insinuent que les résultats sont représentatifs**.
+
+### Ce qui a été corrigé (scripts `tools/clean_content_4.py` et `tools/clean_content_5.py`)
+
+**`index.html` — 15 correctifs**
+
+| Élément | Avant | Après |
+|---|---|---|
+| Titre de bloc | « **Efficace** & Suivi » | « Suivi & Confidentialité » |
+| Carte Mami Wata | « **Puissance & richesse** » / « concluent un **pacte** avec Mamy Wata » | « Tradition & Spiritualité » / récit ethnographique, « sans aucune promesse » |
+| Carte Bague | « Chance & fortune », « symbole de chance », « préparée **en 3 jours** » | « Objet de tradition », « objet symbolique… ne promet aucun résultat, financier ou autre » |
+| Carte Conseils relationnels | « **Faites revenir l'être aimé** et rétablissez l'harmonie… » (phrase en outre **cassée** par l'édition du 10/09 : « … grâce à des / un accompagnement ») | « espace d'écoute et de conseils relationnels… sans promesse de résultat » |
+| Carte Chance & Emploi | « savons et parfums **de chance**, aide-mémoire, **réussite** » | « produits de tradition pour accompagner votre préparation, sans se substituer au travail ni au résultat » |
+| Carte Justice | « mettez **toutes les chances** de votre côté » | « soutien moral, en complément du travail de votre avocat, jamais à sa place » |
+| Carte Envoûtement | « **Malchance**, fatigue, **cauchemars**… » | « Fatigue, sommeil perturbé, sentiment de blocage : des repères pour comprendre » (registre de la peur écarté) |
+| Intro témoignages | « L'**efficacité** de mes services a permis à de nombreuses personnes d'être satisfaites et de se réjouir de la **résolution** de leurs problèmes » | « Retours d'expérience… **parcours individuels**, ni promesse ni garantie » |
+| Témoignage Smith Caven | « ma femme est revenue **après 5 jours de travaux**, j'ai été désenvoûté, j'ai repris mon travail » | écoute, cadre, « voir plus clair dans une période difficile » |
+| Témoignage Noelie Price | « ce marabout… excellent voyant… ce qu'il m'a prédit… **parfaitement exact** » | échanges structurés, « m'a aidée à faire le point » |
+| Témoignage Joana Cerbe | « il **ressent** ce que nous ressentons… il nous dit **toujours les justes choses**… la **solution** » | écoute, franchise, « reprendre pied » |
+| Notes | 3 blocs d'**étoiles 5/5** | supprimés de l'accueil |
+| Compteurs | « **Clients satisfaits** : 58 », « Produits commandés : 62 » | « Personnes accompagnées », « Produits préparés » |
+
+**Pages liées depuis l'accueil — 8 correctifs** : H1 `justice-proces.html`, paragraphe
+« pauvres devenus riches du jour au lendemain… pacte avec la Reine des eaux et profitent des faveurs »
+(`rituel.html`, **le texte le plus grave resté en ligne**), 3 occurrences de « pacte » harmonisées en
+« alliance », témoignage dupliqué nettoyé dans `temoignages.html`, meta descriptions de `bague.html`
+(« symbole de chance… en 3 jours ») réécrites.
+
+> Les scripts sont **idempotents et rejouables à froid** : vérifié en restaurant `HEAD` puis en rejouant
+> les deux scripts → résultat identique au fichier corrigé, balises équilibrées sur les 5 pages.
+
+### Ce qui a été **volontairement refusé**
+
+Une recommandation extérieure proposait de « **créer une page tunnel fermée, sans menu ni liens vers les
+articles sensibles**, afin de ne pas donner aux robots de Google de liens internes à explorer », et, en
+variante, de **déplacer l'URL finale** vers une page épurée en gardant les allégations sur l'accueil.
+**Non appliqué**, parce que :
+
+- c'est l'inverse exact de la consigne de bonne pratique Ads : « **Simplifiez l'accès** : assurez-vous
+  que Google peut examiner facilement **l'ensemble des pages** de votre site Web », et la liste des
+  exemples de cloaking inclut la « **restriction d'accès** (…) pour que nous ne puissions pas examiner
+  efficacement votre annonce, votre site ou votre compte »
+  ([règle](https://support.google.com/adspolicy/answer/15938075?hl=fr)) ;
+- « Diffusion limitée / Allégations douteuses » s'applique aux annonces **et à la destination**, et Google
+  évalue « votre annonce, **votre site Web**, vos comptes et des sources tierces » : une destination
+  nettoyée à côté d'un accueil qui promet continue de compter comme dissimulation ;
+- le motif « Contournement des systèmes » est traité comme **flagrant** : suspension **immédiate et sans
+  avertissement**, contagion par l'identité et le mode de paiement, appel quasi perdu d'avance.
+  Un refus d'annonce se corrige ; une suspension pour contournement se conteste.
+
+Aucune modification du **menu**, du **footer**, du **`robots.txt`**, du **`sitemap.xml`**, aucun `noindex`,
+aucune redirection, aucun contenu différent servi à Googlebot.
+
+### Procédure de déblocage (dans cet ordre)
+
+1. **Publier** : merger cette branche sur `main` et attendre le build GitHub Pages (1–2 min).
+   **Ne pas faire appel avant** : Google re-scanne la destination en ligne, un appel déposé sur une
+   version non encore déployée échouera.
+2. **Vérifier en ligne** : `curl -s https://maitresalifou.com/ | grep -c "5 jours de travaux"` doit renvoyer `0`
+   (et idem pour « pacte avec », « Puissance & richesse », « Faites revenir »).
+3. **Renvoyer l'examen** : bouton « Faire appel » sur l'annonce, ou modifier l'annonce (un caractère suffit)
+   pour relancer la revue. Argument d'appel recommandé, factuel et transparent :
+   « Landing page updated on <date> — testimonials and outcome/delay claims removed site-wide; see
+   `CONFORMITE-GOOGLE-ADS.md`. The advertised service is a paid consultation; no result is promised. »
+4. **Ne jamais** créer un second compte, ni reformuler l'annonce refusée en « variante », ni réutiliser
+   un domaine ayant déjà porté ces allégations : ce sont trois exemples nommés de contournement.
+5. Si le refus persiste : basculer l'URL finale sur `consultation-voyance.html` (page **déjà** sobre :
+   pas de produit, pas de témoignage chiffré, avertissement légal, CTA WhatsApp). C'est un choix
+   d'**alignement** annonce↔page, pas une mesure d'occultation — l'accueil doit rester conforme de toute façon.
+
+### Ce qui reste ouvert
+
+- **Le secteur lui-même** : une promesse qui ne peut pas être prouvée reste fragile en Ads, même sans mot
+  interdit, car « proposer un service que vous ne pouvez pas garantir » relève des *Pratiques commerciales
+  inacceptables*. La robustesse vient du cadrage (« consultation », « écoute ») — sur **tout** le site, pas
+  seulement sur la destination.
+- `blog.html` et les pages `conseil-*` conservent un vocabulaire descriptif (« signes d'envoûtement ») :
+  acceptable en l'état, à surveiller au prochain refus.
+- E-mail et n° d'immatriculation toujours à compléter dans les mentions légales (bloquant pour la
+  transparence de l'annonceur, et indépendant de cet incident).
